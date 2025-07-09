@@ -52,6 +52,12 @@ main {
   gap: 20px;
 }
 
+/* For school.html we use single column but keep flex for alignment */
+main.single-column {
+  flex-direction: column;
+}
+
+/* Left and Right Columns, if used */
 #leftColumn {
   width: 65%;
 }
@@ -60,6 +66,7 @@ main {
   width: 35%;
 }
 
+/* General section styling */
 section {
   background-color: #ffffff;
   padding: 15px;
@@ -67,6 +74,7 @@ section {
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
+/* Footer styling */
 footer {
   background-color: #3b3c36;
   color: white;
@@ -81,12 +89,14 @@ footer a {
   text-decoration: none;
 }
 
+/* Image styles */
 img {
   width: 100%;
-  max-width: 500px;
-  height: auto;
+  max-width: 400px;      /* max width for image */
+  max-height: 250px;     /* limit height to keep it short */
+  object-fit: cover;     /* crops/adjusts image to fit nicely */
   display: block;
-  margin: 20px auto;
+  margin: 20px auto 0;   /* center horizontally, some space on top */
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
